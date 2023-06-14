@@ -1,0 +1,179 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --HoverColor: hsl(198, 81%, 42%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16 %);
+    --textColor: hsl(240, 2%, 41%);
+    --whiteColorDeam: hs1(0, 0%, 93%);
+    --greyText: rgb(134, 132, 132);
+    --inputColor: rgb(231, 226, 226);
+    --bodyColor: rgb(240, 240, 243);
+    --blackcolor: rgb(69, 65, 65);
+}
+
+.home {
+    height: 80vh;
+    background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url('../../Assets/pexels-suzukii-xingfu-872831.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+
+    .setContainer {
+        .homeText {
+            text-align: center;
+
+            .title {
+                font-size: 2rem;
+                color: var(--whiteColor);
+                font-weight: 700;
+                line-height: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 13px;
+                color: var(--whiteColor);
+                opacity: .9;
+                font-weight: 300;
+                padding: 1rem 0;
+                max-width: 70%;
+                text-align: center;
+                margin: auto;
+            }
+
+            .btn {
+                padding: .6rem 1.5rem;
+            }
+        }
+
+        .homeCard {
+            width: 80%;
+            border-radius: 1rem;
+            padding: 2rem;
+            background: var(--whiteColor);
+            position: absolute;
+            gap: 1rem;
+            justify-content: center;
+            bottom: -35%;
+            transform: translate(-50%);
+            left: 50%;
+            box-shadow: 0 2px 8px 4px rgba(177, 175, 175, 0.45);
+
+
+            .locationDiv,
+            .distDiv,
+            .priceDiv {
+                width: 100%;
+
+                label {
+                    display: block;
+                    color: var(--textColor);
+                    font-weight: 500;
+                    font-size: 13px;
+                    padding-bottom: .4rem;
+                }
+
+
+                input {
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 10px;
+                    background: var(--inputColor);
+                    outline: none;
+                    font-size: 13px;
+                    font-weight: 500;
+
+                    &::placeholder {
+                        font-weight: 400;
+                        font-size: 13px;
+                        opacity: .5;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+            }
+
+            .btn {
+                width: 100%;
+                padding: .6rem 1.5rem;
+                color: var(--whiteColor);
+                font-weight: 600;
+            }
+
+
+
+        }
+    }
+
+
+}
+
+@media screen and (min-width:480px) {
+    .home {
+        .setContainer {
+            .homeCard {
+                bottom: -18px;
+                width: 90%;
+                grid-template-columns: repeat(2, 1fr);
+
+                .btn {
+                    transform: translateY(15px);
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:556px) {
+    .home {
+        .setContainer {
+            .homeText {
+                .title {
+                    font-size: 2.5rem;
+                }
+
+                .subtitle {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:720px) {
+    .home {
+        .setContainer {
+           .homeCard{
+            bottom: -7%;
+            grid-template-columns: repeat(3,1fr);
+           }
+        }
+    }
+}
+
+
+@media screen and (min-width:1024px){
+    .home{
+        .setContainer{
+            .homeText{
+                .subtitle{
+                    font-size: 20px;
+                }
+            }
+            .homeCard{
+                width: 70%;
+            }
+        }
+    }
+}

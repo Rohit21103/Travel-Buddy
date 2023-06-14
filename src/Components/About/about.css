@@ -1,0 +1,104 @@
+/* colors & styling
+ */
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --HoverColor: hsl(198, 81%, 42%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16 %);
+  --textColor: hsl(240, 2%, 41%);
+  --whiteColorDeam: hs1(0, 0%, 93%);
+  --greyText: rgb(130, 125, 125);
+  --greybg: hsl(0, 7%, 85%);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 243);
+  --blackcolor: rgb(69, 65, 65);
+  /* // box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334); */
+}
+
+.about .secContainer .title {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.about .secContainer .mainContent {
+  gap: 1.5rem;
+}
+.about .secContainer .mainContent .singleItem {
+  text-align: center;
+}
+.about .secContainer .mainContent .singleItem img {
+  background: rgba(247, 144, 54, 0.265);
+  width: 150px;
+  border-radius: 40%;
+  padding: 1rem;
+}
+.about .secContainer .mainContent .singleItem h3 {
+  font-weight: 700;
+  color: var(--blackColor);
+  padding: 0.5rem;
+}
+.about .secContainer .mainContent .singleItem p {
+  font-size: 13px;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  color: var(--textColor);
+}
+.about .secContainer .videoCard {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.609)), url(../../Assets/view.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .secContainer .videoCard .CardContent {
+  gap: 2rem;
+  padding: 2rem 0.5rem;
+}
+.about .secContainer .videoCard .CardContent .cardText h2 {
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.about .secContainer .videoCard .CardContent .cardText p {
+  color: var(--whiteColor);
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.about .secContainer .videoCard .cardVideo {
+  border: 2px solid var(--whiteColor);
+  height: 180px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about .secContainer .videoCard .cardVideo .video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 720px) {
+  .about .secContainer .videoCard .CardContent {
+    gap: 4rem;
+    padding: 4rem 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about .secContainer .videoCard .CardContent .cardText h2 {
+    font-size: 2rem;
+  }
+  .about .secContainer .videoCard .CardContent .cardText p {
+    font-size: 15px;
+    opacity: 0.7;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about .secContainer .mainContent {
+    padding: 2.5rem 0;
+  }
+}/*# sourceMappingURL=about.css.map */
